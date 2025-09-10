@@ -1,3 +1,6 @@
+install:
+	npm ci
+
 test:
 	npm run test
 
@@ -9,3 +12,6 @@ test-watch:
 
 test-preview:
 	npm run vitest-preview
+
+update-deps:
+	npx ncu -u
