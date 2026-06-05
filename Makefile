@@ -5,7 +5,10 @@ test:
 	npm run test
 
 lint:
-	npm run lint .
+	npx biome check .
+
+lint-fix:
+	npx biome check --write .
 
 test-watch:
 	npm run test -- --watch
