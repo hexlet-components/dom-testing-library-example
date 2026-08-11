@@ -1,20 +1,21 @@
 install:
-	npm ci
+	pnpm install --frozen-lockfile
 
 test:
-	npm run test
+	pnpm run test
 
 lint:
-	npx biome check .
+	pnpm --silent run lint
+	pnpm --silent run format:check
 
 lint-fix:
-	npx biome check --write .
+	pnpm --silent run lint:fix
 
 test-watch:
-	npm run test -- --watch
+	pnpm run test -- --watch
 
 test-preview:
-	npm run vitest-preview
+	pnpm run vitest-preview
 
 update-deps:
-	npx ncu -u
+	pnpm exec ncu -u
