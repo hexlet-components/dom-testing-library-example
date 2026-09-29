@@ -27,5 +27,5 @@
   "dependencies": {
     "@hexlet/tic-tac-toe": "^0.0.14"
   },
-  "packageManager": "pnpm@11.24.0"
+  "packageManager": "pnpm@12.6.0"
 }
